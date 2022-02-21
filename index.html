@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
     <script src="https://kit.fontawesome.com/0694e6e7c8.js" crossorigin="anonymous"></script>
     <title>InDesign</title>
 </head>
 <body>
-    <header>
-        <img src="./img/logo.png" alt="logo">
+    <div class="menu" id="menu">
+        <div>
+            <i class="fa-solid fa-angle-up" id="up"></i>
+        </div>
+        <hr>
         <nav>
             <a href="">HOME</a>
             <a href="">PORTFOLIO</a>
@@ -18,7 +23,63 @@
             <a href="">BLOG</a>
             <a href="">CONTACT</a>
         </nav>
-        <i class="fa-solid fa-bars"></i>
+    </div>
+    <header>
+        <div class="container">
+            <img src="./img/logo.png" alt="logo">
+            <i class="fa-solid fa-angle-down down" id="down"></i>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">PORTFOLIO</a>
+                <a href="">ABOUT</a>
+                <a href="">BLOG</a>
+                <a href="">CONTACT</a>
+            </nav>
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
+    <div class="intro">
+        <div class="text">
+            <h1>Design <span>for</span> Creative</h1>
+            <p>A portfolio platform for creative folks</p>
+        </div>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="text">
+                <div class="title_p">
+                    <h2>Latest Works</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet veniam unde maiores id eius.</p>
+                </div>
+                <nav class="options">
+                    <a href="#">All</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Landscape</a>
+                    <a href="#">Lifestyle</a>
+                    <a href="#">potrait</a>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <img src="./img/photos/01.jpg" alt="01">
+                    <img src="./img/photos/04.jpg" alt="04">
+                    <img src="./img/photos/07.jpg" alt="07">
+                </div>
+                <div class="row">
+                    <img src="./img/photos/02.jpg" alt="02">
+                    <img src="./img/photos/05.jpg" alt="05">
+                    <img src="./img/photos/08.jpg" alt="08">
+                    <img src="./img/photos/10.jpg" alt="10">
+                </div>
+                <div class="row">
+                    <img src="./img/photos/03.jpg" alt="03">
+                    <img src="./img/photos/06.jpg" alt="06">
+                    <img src="./img/photos/09.jpg" alt="09">
+                    <img src="./img/photos/11.jpg" alt="11">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+<script src="./js/main.js"></script>
 </html>

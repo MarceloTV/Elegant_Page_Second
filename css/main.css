@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,36 +9,199 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-color: gray;
+body,
+html {
+  overflow-x: hidden;
 }
 
+/* HEADER */
+
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 60px;
+  width: 100%;
+  position: absolute;
+  padding: 10px 0;
   border-bottom: 1px solid white;
 }
 
-header img {
-  width: 35px;
-  height: 35px;
+header .container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header nav a {
+header .container img {
+  width: 30px;
+  height: 30px;
+}
+
+header .container .down {
+  display: none;
+  font-size: 2.8em;
+  cursor: pointer;
+}
+
+header .container nav a {
   display: inline-block;
   text-decoration: none;
+  font-size: 0.8em;
   color: white;
   font-weight: bold;
   margin-right: 20px;
 }
 
-header nav a:nth-child(5) {
+header .container nav a:nth-child(5) {
   margin-right: 0;
 }
 
-header i {
-  font-size: 2em;
+header .container i {
+  font-size: 1.5em;
   color: white;
+}
+
+/* INTRO */
+
+.intro {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.intro .text {
+  text-align: center;
+  color: white;
+  padding-bottom: 60px;
+}
+
+.intro .text h1 {
+  font-size: 4em;
+  letter-spacing: 8px;
+  margin-bottom: 5px;
+}
+
+.intro .text h1 span {
+  font-size: 0.7em;
+  font-style: italic;
+  font-family: "Josefin Slab";
+}
+
+.intro .text p {
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+/* MAIN */
+
+.main {
+  background: white;
+}
+
+.main .container {
+  width: 85%;
+  margin: auto;
+  padding: 90px 0;
+}
+
+.main .container .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.main .container .text .title_p {
+  width: 45%;
+}
+
+.main .container .text .title_p h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.main .container .text .title_p p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.main .container .text .options a {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.main .container .text .options a:nth-child(5) {
+  margin-right: 0;
+}
+
+.main .container .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.main .container .content .row img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* MENU */
+
+.menu {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  top: -100vh;
+}
+
+.menu div {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0px;
+  padding: 10px 0;
+}
+
+.menu div i {
+  font-size: 3em;
+}
+
+.menu hr {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.menu nav {
+  width: 95%;
+  margin: auto;
+}
+
+.menu nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-size: 1.5em;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.show {
+  transition: all ease 0.3s;
+  top: 0 !important;
+}
+
+.close {
+  transition: all ease 0.3s;
+  top: -100vh !important;
 }
