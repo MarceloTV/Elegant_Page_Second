@@ -4,6 +4,16 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  main .container .content {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  main .container .content .row:nth-child(3) {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .main .container .text {
     display: block;
@@ -33,6 +43,14 @@
 
   .intro .text p {
     font-size: 1.5em;
+  }
+
+  main .container .content {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  main .container .content .row:nth-child(2) {
+    display: none;
   }
 }
 
